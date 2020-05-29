@@ -26,8 +26,8 @@ public class ConsoleOutput implements Printer {
     }
 
     @Override
-    public void printTables(String possibility, List<Integer> tableNumbers, int tablesCount) {
-        System.out.print(possibility + ", ");
+    public void printTables(List<Integer> tableNumbers, int tablesCount) {
+        System.out.print("Y, ");
         int tableCount = 1;
         for (Integer tableNumber : tableNumbers) {
             if (tableCount < tablesCount)

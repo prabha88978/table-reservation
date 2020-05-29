@@ -11,7 +11,7 @@ public interface Printer {
 
     void displayTypeOfSeatText();
 
-    void printTables(String possibility, List<Integer> tableNumbers, int tablesCount);
+    void printTables(List<Integer> tableNumbers, int tablesCount);
 
     void printNotPossibleStatus();
 

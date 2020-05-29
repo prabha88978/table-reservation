@@ -24,7 +24,7 @@ public class Manager {
             char typeOfSeating = inputScan.readChar();
             if (restaurant.isSeatingPossible(seatsRequired, typeOfSeating)) {
                 List<Integer> tables = restaurant.getSeatingTables(seatsRequired, typeOfSeating);
-                printer.printTables("Y", tables, tables.size());
+                printer.printTables(tables, tables.size());
 
             } else {
                 printer.printNotPossibleStatus();

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
+    private final static char YES = 'y';
+    private final static char NO = 'n';
     private List<Table> tables;
 
     public Restaurant() {
@@ -19,7 +21,7 @@ public class Restaurant {
     }
 
     public boolean isSeatingPossible(int requestedSeat, char sameTable) {
-        if (sameTable == 'n') { // change to readable
+        if (sameTable == NO) {
             return isSeatingPossibleOnMultipleTables(requestedSeat);
         } else {
             return isSeatingPossibleOnSameTable(requestedSeat);
@@ -48,7 +50,7 @@ public class Restaurant {
 
     public List<Integer> getSeatingTables(int requestedSeats, char typeOfOrder) {
         List<Integer> tableNumbers;
-        if (typeOfOrder == 'y') {
+        if (typeOfOrder == YES) {
             tableNumbers = getSeatingTableNumber(requestedSeats);
         } else {
             tableNumbers = getTableNumbersForSeatingTables(requestedSeats);

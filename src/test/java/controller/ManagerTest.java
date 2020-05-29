@@ -40,7 +40,7 @@ public class ManagerTest {
 
         manager.manage();
 
-        verify(mockIO).printTables("Y", tableNumbers, 1);
+        verify(mockIO).printTables(tableNumbers, 1);
     }
 
 }
