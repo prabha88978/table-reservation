@@ -4,13 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-    private List<Table> tables = new ArrayList<>();
+    private List<Table> tables;
+
+    public Restaurant() {
+        tables = new ArrayList<>();
+    }
 
     public void add(Table table) {
         tables.add(table);
     }
 
-    public int getTableCount(){
+    public int getTableCount() {
         return tables.size();
     }
 
@@ -83,4 +87,5 @@ public class Restaurant {
         }
         return tableNumbers;
     }
+
 }
